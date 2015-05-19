@@ -1,0 +1,25 @@
+body {
+	font-family:Arial;
+	font-size:14px;
+	background-image:url('../img/fondo.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover
+}
+.header, .footer {
+	background-color:#000;
+	width:100%;
+	position:fixed;
+}
+.header {
+	height:52px;
+	top:0
+}
+.footer {
+	height:61px;
+	bottom:0
+}
+.participa {
+	max-width:840px
+}
