@@ -1,3 +1,24 @@
+@font-face {
+	font-family:'FagoCo-BlackItalic';
+	src:url('../fonts/FagoCo-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FagoCo-BlackItalic.otf')  format('opentype'),
+		url('../fonts/FagoCo-BlackItalic.woff') format('woff'),
+		url('../fonts/FagoCo-BlackItalic.ttf')  format('truetype'),
+		url('../fonts/FagoCo-BlackItalic.svg#FagoCo-BlackItalic') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'Gotham-Medium';
+	src:url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Medium.otf')  format('opentype'),
+		url('../fonts/Gotham-Medium.woff') format('woff'),
+		url('../fonts/Gotham-Medium.ttf')  format('truetype'),
+		url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 	font-family:Arial;
 	font-size:14px;
@@ -5,7 +26,85 @@ body {
 	background-position:top center;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	background-size:cover
+	background-size:cover;
+	letter-spacing:.75px
+}
+.container-fluid {
+	padding-left:0;
+	padding-right:0
+}
+a:hover, a:active, a:focus {
+	text-decoration:none
+}
+.formulario {
+	border-right:2px solid #fff;
+	padding:12px 20px 12px 0
+}
+label {
+	font-family:'Gotham-Medium';
+	text-transform:uppercase;
+	font-size:12px
+}
+label.control-label {
+	background-image:url('../img/vineta.png');
+	background-repeat:no-repeat;
+	background-position:center left;
+	padding-left:21px!important;
+	margin-top:6px
+}
+.inputbox {
+	border:2px solid #000;
+	background-color:#fff
+}
+.container {
+	position:relative
+}
+h2, h3, h4, h5 {
+	color:#fff;
+	font-family:'FagoCo-BlackItalic';
+	text-align:center;
+	text-transform:uppercase
+}
+h2 {
+	background-color:#000;
+	font-size:47px;
+	line-height:74px;
+	margin-top:0
+}
+h2 small {
+	color:#fff;
+	display:block;
+	font-size:22px;
+	line-height:26px;
+	margin-top:-15px;
+	padding-bottom:6px
+}
+h2 small span {
+	color:#f4df03;
+}
+h3 {
+	font-size:29px;
+	margin:0 30px 25px;
+	max-width:870px
+}
+h3 span {
+	color:#000
+}
+h4 {
+	background-color:#000;
+	font-size:19px;
+	line-height:34px;
+	width:100%;
+	margin-top:0
+}
+h5 {
+	color:#000;
+	font-size:15px
+}
+.contenido {
+	background-color:#ffd100;
+	overflow:hidden;
+	padding-top:15px
 }
 .header, .footer {
 	background-color:#000;
@@ -17,9 +116,153 @@ body {
 	top:0
 }
 .footer {
-	height:61px;
+	background-color:transparent;
+	background-image:url('../img/fondo-footer.png');
+	background-repeat:repeat-x;
+	height:85px;
 	bottom:0
+}
+.header p, .footer p {
+	margin-bottom:0
+}
+.logo {
+	margin-top:10px
+}
+.terminos a {
+	font-size:18px;
+	color:#fff;
+	line-height:52px;
+	border-bottom:2px solid #fff
+}
+.terminos a:hover,
+.terminos a:active {
+	border-bottom:none
+}
+.sociales {
+	font-size:9px;
+	color:#fff;
+	line-height:52px
 }
 .participa {
 	max-width:840px
+}
+.marcas {
+	margin-top:36px
+}
+.balon {
+	position:absolute;
+	right:-30px;
+	bottom:-45px
+}
+.siguiente {
+	position:absolute;
+	bottom:-30px;
+	left:50%;
+	margin-left:-84px;
+	z-index:9
+}
+.registrar {
+	position:absolute;
+	bottom:-30px;
+	left:50%;
+	margin-left:-178px;
+	z-index:9
+}
+.tabla {
+	background-color:#fff
+}
+.item {
+	cursor:pointer
+}
+.paises div {
+	font-family:'Gotham-Medium';
+	font-size:16px;
+	margin:0 14px 12px;
+	text-transform:uppercase
+}
+.pais p {
+	font-family:'Gotham-Medium';
+	font-size:15px;
+	margin:3px 14px 4px;
+	height:22px;
+	text-transform:uppercase
+}
+.con-borde {
+	border:2px solid #000
+}
+.con-borde > [class*='col-'] {
+	border-right:2px solid #000
+}
+.con-borde > [class*='col-']:last-child {
+	border-right:none
+}
+
+@media (max-width:320px) {
+	.terminos a {
+		font-size:9px!important
+	}
+}
+
+@media (max-width:767px) {
+	.terminos a {
+		font-size:10px;
+		border-bottom:1px solid #fff
+	}
+	.footer {
+		background-image:none;
+		background-color:#000;
+		height:46px
+	}
+	.footer img {
+		margin-top:4px
+	}
+	.tarjeta {
+		max-width:60px
+	}
+	.ripley {
+		max-width:90px
+	}
+}
+
+/*	wrapper divs */
+.custom-checkbox,.custom-radio{position:relative}
+
+/* input, label positioning */
+.custom-checkbox input, 
+.custom-radio input {
+	position:absolute;
+	left:2px;
+	top:3px;
+	margin:0;
+	z-index:0
+}
+
+.custom-checkbox label, 
+.custom-radio label {
+	display:block;
+	position:relative;
+	z-index:1;
+	padding:0 0 0 30px;
+	margin:0 0 8px;
+	cursor:pointer;
+	height:15px
+}
+
+/* states */
+.custom-checkbox label { background: url('../img/checkbox.jpg') no-repeat; }
+
+.custom-radio label { background: url('../img/checkbox.jpg') no-repeat; }
+
+.custom-checkbox label, .custom-radio label {
+	background-position: 0 0;
+}
+
+.custom-checkbox label.checked, 
+.custom-radio label.checked {
+	background-position: 0 -15px;
+}
+
+.no-gutter > [class*='col-'] {
+	padding-right:0;
+	padding-left:0
 }
