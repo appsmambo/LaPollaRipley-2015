@@ -30,9 +30,11 @@ function registrarDatos() {
 		url:urlBase + '/registro',
 		data:$('#registro').serialize(),
 		success:function(data) {
-			if (data.success === 'ok')
+			if (data.success === 'ok') {
+				ga('send', 'event', 'registro-ok');
 				pagina = 3;  // va al mensaje de gracias
-			else {
+			} else {
+				ga('send', 'event', 'registro-error');
 				pagina = 1; // va al formulario y muestra mensaje
 				$('.registrar').prop('disabled', false);
 				var mensaje = '';
@@ -98,6 +100,7 @@ $(document).ready(function() {
 		pronostico.cuarto = pais;
 	});
 	$('.terminos a').click(function() {
+		ga('send', 'event', 'terminos-y-condiciones');
 		fleXenv.updateScrollBars();
 		$.fn.fullpage.moveTo(1, 0);
 		return false;
@@ -108,12 +111,14 @@ $(document).ready(function() {
 	});
 	fleXenv.initByClass("flexcroll");
 	$('.participa').click(function() {
+		ga('send', 'event', 'participa');
 		pagina = 1;  // va a formulario
 		$.fn.fullpage.moveSlideRight();
 		return false;
 	});
 	$('.siguiente').click(function() {
 		if ($('#registro').isValid() === true) {
+			ga('send', 'event', 'pronostico');
 			pagina = 2; // va a pronostico
 			$.fn.fullpage.moveSlideRight();
 		}

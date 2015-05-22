@@ -614,9 +614,11 @@
 									<span>tu pronóstico ha sido registrado con éxito.</span>
 									<br>
 									Hemos enviado a tu correo una copia de los datos que has registrado y los términos y condiciones de la campaña.
+									<br>
+									<small>Si no llega a tu inbox, recuerda revisar tu bandeja de spam.</small>
 								</h3>
 								<p>
-									<img src="{{url()}}/img/copa-suerte.png" alt="" class="center-block img-responsive">
+									<img src="{{url()}}/img/copa-suerte.png" alt="" class="center-block img-responsive suerte">
 									<span class="hidden-xs"><br><br></span>
 								</p>
 							</div>
