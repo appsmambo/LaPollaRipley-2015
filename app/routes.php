@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('index');
-});
+Route::get('/', array('as' => 'index', 'uses' => 'HomeController@getIndex'));
+
+Route::post('/registro', array('as' => 'registro', 'uses' => 'HomeController@postRegistro'));

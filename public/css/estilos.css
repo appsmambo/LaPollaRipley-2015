@@ -20,6 +20,7 @@
 }
 
 body {
+	background-color:#000;
 	font-family:Arial;
 	font-size:14px;
 	background-image:url('../img/fondo.jpg');
@@ -54,10 +55,14 @@ label.control-label {
 }
 .inputbox {
 	border:2px solid #000;
+	color:#000;
 	background-color:#fff
 }
 .container {
 	position:relative
+}
+.con-margen {
+	margin-bottom:35px
 }
 h2, h3, h4, h5 {
 	color:#fff;
@@ -67,28 +72,34 @@ h2, h3, h4, h5 {
 }
 h2 {
 	background-color:#000;
-	font-size:47px;
-	line-height:74px;
+	font-size:38px;
+	line-height:50px;
 	margin-top:0
 }
 h2 small {
 	color:#fff;
 	display:block;
-	font-size:22px;
-	line-height:26px;
-	margin-top:-15px;
+	font-size:21px;
+	line-height:22px;
 	padding-bottom:6px
 }
 h2 small span {
 	color:#f4df03;
 }
 h3 {
-	font-size:29px;
+	font-size:27px;
 	margin:0 30px 25px;
 	max-width:870px
 }
 h3 span {
 	color:#000
+}
+h3.mensaje {
+	font-size:26px;
+	line-height:34px
+}
+h3.mensaje span {
+	font-size:32px
 }
 h4 {
 	background-color:#000;
@@ -109,7 +120,7 @@ h5 {
 .header, .footer {
 	background-color:#000;
 	width:100%;
-	position:fixed;
+	position:fixed
 }
 .header {
 	height:52px;
@@ -119,8 +130,9 @@ h5 {
 	background-color:transparent;
 	background-image:url('../img/fondo-footer.png');
 	background-repeat:repeat-x;
-	height:85px;
-	bottom:0
+	height:72px;
+	bottom:0;
+	background-position:left bottom
 }
 .header p, .footer p {
 	margin-bottom:0
@@ -147,7 +159,7 @@ h5 {
 	max-width:840px
 }
 .marcas {
-	margin-top:36px
+	margin-top:24px
 }
 .balon {
 	position:absolute;
@@ -196,17 +208,70 @@ h5 {
 .con-borde > [class*='col-']:last-child {
 	border-right:none
 }
+.form-error {
+	display:none!important
+}
+.has-success label {
+	color:#000!important
+}
+.has-success .inputbox {
+	border-color:#000
+}
+.tipo {
+	position:absolute;
+	top:0;
+	right:15px;
+	width:40%;
+	padding-left:4px;
+	padding-right:4px
+}
+.terminos-y-condiciones {
+	font-family:'Gotham-Medium';
+	background-color:#fff;
+	border:2px solid #000;
+	padding:17px 25px;
+	max-height:340px
+}
+.cerrar {
+	position:absolute;
+	right:0;
+	top:-5px
+}
 
 @media (max-width:320px) {
 	.terminos a {
-		font-size:9px!important
+		font-size:8px!important
 	}
 }
 
 @media (max-width:767px) {
+	body {
+		font-size:12px
+	}
+	h2 {
+		font-size:20px;
+		line-height:36px
+	}
+	h3 {
+		font-size:16px;
+		margin:0
+	}
+	.formulario {
+		border-right:none;
+		padding:0
+	}
+	.form-group {
+		margin-left:0!important;
+		margin-right:0!important
+	}
+	label,
+	.form-control {
+		font-size:11px
+	}
 	.terminos a {
-		font-size:10px;
-		border-bottom:1px solid #fff
+		font-size:9px;
+		border-bottom:1px solid #fff;
+		line-height:52px
 	}
 	.footer {
 		background-image:none;
@@ -222,8 +287,15 @@ h5 {
 	.ripley {
 		max-width:90px
 	}
+	.con-margen {
+		margin-bottom:90px
+	}
+	.container-responsive {
+		margin-top:56px
+	}
 }
 
+/* checkbox */
 /*	wrapper divs */
 .custom-checkbox,.custom-radio{position:relative}
 
@@ -260,6 +332,59 @@ h5 {
 .custom-checkbox label.checked, 
 .custom-radio label.checked {
 	background-position: 0 -15px;
+}
+
+/* flexscroll */
+.scrollgeneric {
+    line-height: 1px;
+    font-size: 1px;
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+.vscrollerbar {
+    width: 17px;
+    height: 41px !important;
+    background:#efd108;
+    cursor:pointer !important;
+}
+.vscrollerbarbeg {
+    height: 24px !important;
+    width: 17px;
+    display:none;
+}
+.vscrollerbarend {
+    height: 24px;
+    width: 17px;
+    display:none;
+}
+
+.vscrollerbase {
+    width: 17px;
+    background:#000;
+}
+.vscrollerbasebeg {
+    width: 11px;
+    height: 7px !important;
+    display:none;
+}
+.vscrollerbaseend {
+    width: 11px;
+    height: 7px !important;
+    display:none;
+}
+.hscrollerbase {
+    height: 16px; background-color: white;display:none;
+}
+.hscrollerbar {
+    height: 16px; background-color: black;display:none;
+}
+
+.vscrollerbar, .hscrollerbar {
+    padding:0 0;
+    z-index: 2;
+    cursor:pointer;
 }
 
 .no-gutter > [class*='col-'] {
