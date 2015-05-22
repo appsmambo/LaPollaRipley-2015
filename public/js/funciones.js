@@ -77,6 +77,26 @@ $(document).ready(function() {
 			$(this).find("p").html(html);
 		}
 	});
+	$('#responsive-campeon').change(function() {
+		var pais = $(this).val();
+		if (pais === '0') return false;
+		pronostico.campeon = pais;
+	});
+	$('#responsive-subcampeon').change(function() {
+		var pais = $(this).val();
+		if (pais === '0') return false;
+		pronostico.subcampeon = pais;
+	});
+	$('#responsive-tercero').change(function() {
+		var pais = $(this).val();
+		if (pais === '0') return false;
+		pronostico.tercero = pais;
+	});
+	$('#responsive-cuarto').change(function() {
+		var pais = $(this).val();
+		if (pais === '0') return false;
+		pronostico.cuarto = pais;
+	});
 	$('.terminos a').click(function() {
 		fleXenv.updateScrollBars();
 		$.fn.fullpage.moveTo(1, 0);

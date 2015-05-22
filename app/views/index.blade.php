@@ -90,7 +90,7 @@
 								<img src="{{url()}}/img/btn-close.png" alt="">
 							</a>
 						</h2>
-						<img src="{{url()}}/img/balon.png" class="balon hidden-md" alt="">
+						<img src="{{url()}}/img/balon.png" class="balon hidden-md hidden-xs" alt="">
 						<div class="contenido">
 							<div class="container">
 								<div class="row">
@@ -231,7 +231,7 @@
 				</div>
 				<!-- slide 3 / pronostico -->
 				<div class="slide" id="slide3">
-					<div class="container con-margen">
+					<div class="container container-responsive con-margen">
 						<h2>
 							Ingresa tu pronóstico DE LA COPA AMÉRICA
 							<small>
@@ -239,11 +239,11 @@
 								<span>4 primeros puestos</span> según tu <span>pronóstico.</span>
 							</small>
 						</h2>
-						<img src="{{url()}}/img/balon.png" class="balon hidden-md" alt="">
+						<img src="{{url()}}/img/balon.png" class="balon hidden-md hidden-xs" alt="">
 						<input type="image" src="{{url()}}/img/btn-registro.png" class="registrar">
 						<div class="contenido">
 							<div class="container">
-								<div class="row">
+								<div class="row hidden-xs">
 									<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
 										<div class="row tabla con-borde no-gutter">
 											<div class="paises col-sm-4">
@@ -359,9 +359,240 @@
 											</div>
 										</div>
 										<p>
-											<span class="hidden-xs"><br></span>
+											<br>
 										</p>
 									</div>
+								</div>
+								<!-- pronostico responsive -->
+								<div class="visible-xs">
+									<p>
+										<img src="{{url()}}/img/copa.png" alt="" class="center-block img-responsive copa">
+									</p>
+									<div class="row tabla con-borde no-gutter">
+										<div class="col-sm-3">
+											<div class="form-group">
+												<div class="col-xs-10 col-xs-offset-1">
+													<select class="form-control inputbox" id="responsive-campeon" name="responsive-campeon">
+														<option value="0">Seleccione</option>
+														<optgroup label="GRUPO A">
+															<option value="chile">
+																Chile
+															</option>
+															<option value="mexico">
+																México
+															</option>
+															<option value="ecuador">
+																Ecuador
+															</option>
+															<option value="bolivia">
+																Bolivia
+															</option>
+														</optgroup>
+														<optgroup label="GRUPO B">
+															<option value="argentina">
+																Argentina
+															</option>
+															<option value="uruguay">
+																Uruguay
+															</option>
+															<option value="paraguay">
+																Paraguay
+															</option>
+															<option value="jamaica">
+																Jamaica
+															</option>
+														</optgroup>
+														<optgroup label="GRUPO C">
+															<option value="brasil">
+																Brasil
+															</option>
+															<option value="colombia">
+																Colombia
+															</option>
+															<option value="peru">
+																Perú
+															</option>
+															<option value="venezuela">
+																Venezuela
+															</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+											<h5>
+												campeón
+											</h5>
+										</div>
+										<div class="col-sm-3">
+											<div class="form-group">
+												<div class="col-xs-10 col-xs-offset-1">
+													<select class="form-control inputbox" id="responsive-subcampeon" name="responsive-subcampeon">
+														<option value="0">Seleccione</option>
+														<optgroup label="GRUPO A">
+															<option value="chile">
+																Chile
+															</option>
+															<option value="mexico">
+																México
+															</option>
+															<option value="ecuador">
+																Ecuador
+															</option>
+															<option value="bolivia">
+																Bolivia
+															</option>
+														</optgroup>
+														<optgroup label="GRUPO B">
+															<option value="argentina">
+																Argentina
+															</option>
+															<option value="uruguay">
+																Uruguay
+															</option>
+															<option value="paraguay">
+																Paraguay
+															</option>
+															<option value="jamaica">
+																Jamaica
+															</option>
+														</optgroup>
+														<optgroup label="GRUPO C">
+															<option value="brasil">
+																Brasil
+															</option>
+															<option value="colombia">
+																Colombia
+															</option>
+															<option value="peru">
+																Perú
+															</option>
+															<option value="venezuela">
+																Venezuela
+															</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+											<h5>
+												subcampeón
+											</h5>
+										</div>
+										<div class="col-sm-3">
+											<div class="form-group">
+												<div class="col-xs-10 col-xs-offset-1">
+													<select class="form-control inputbox" id="responsive-tercero" name="responsive-tercero">
+														<option value="0">Seleccione</option>
+														<optgroup label="GRUPO A">
+															<option value="chile">
+																Chile
+															</option>
+															<option value="mexico">
+																México
+															</option>
+															<option value="ecuador">
+																Ecuador
+															</option>
+															<option value="bolivia">
+																Bolivia
+															</option>
+														</optgroup>
+														<optgroup label="GRUPO B">
+															<option value="argentina">
+																Argentina
+															</option>
+															<option value="uruguay">
+																Uruguay
+															</option>
+															<option value="paraguay">
+																Paraguay
+															</option>
+															<option value="jamaica">
+																Jamaica
+															</option>
+														</optgroup>
+														<optgroup label="GRUPO C">
+															<option value="brasil">
+																Brasil
+															</option>
+															<option value="colombia">
+																Colombia
+															</option>
+															<option value="peru">
+																Perú
+															</option>
+															<option value="venezuela">
+																Venezuela
+															</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+											<h5>
+												tercer puesto
+											</h5>
+										</div>
+										<div class="col-sm-3">
+											<div class="form-group">
+												<div class="col-xs-10 col-xs-offset-1">
+													<select class="form-control inputbox" id="responsive-cuarto" name="responsive-cuarto">
+														<option value="0">Seleccione</option>
+														<optgroup label="GRUPO A">
+															<option value="chile">
+																Chile
+															</option>
+															<option value="mexico">
+																México
+															</option>
+															<option value="ecuador">
+																Ecuador
+															</option>
+															<option value="bolivia">
+																Bolivia
+															</option>
+														</optgroup>
+														<optgroup label="GRUPO B">
+															<option value="argentina">
+																Argentina
+															</option>
+															<option value="uruguay">
+																Uruguay
+															</option>
+															<option value="paraguay">
+																Paraguay
+															</option>
+															<option value="jamaica">
+																Jamaica
+															</option>
+														</optgroup>
+														<optgroup label="GRUPO C">
+															<option value="brasil">
+																Brasil
+															</option>
+															<option value="colombia">
+																Colombia
+															</option>
+															<option value="peru">
+																Perú
+															</option>
+															<option value="venezuela">
+																Venezuela
+															</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+											<h5>
+												cuarto puesto
+											</h5>
+										</div>
+									</div><!-- fin tabla -->
+									<p>
+										<br>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -373,11 +604,11 @@
 						<h2>
 							gracias
 						</h2>
-						<img src="{{url()}}/img/balon.png" class="balon hidden-md" alt="">
+						<img src="{{url()}}/img/balon.png" class="balon hidden-md hidden-xs" alt="">
 						<div class="contenido">
 							<div class="container">
-								<p>
-									<span class="hidden-xs"><br><br></span>
+								<p class="hidden-xs">
+									<br><br>
 								</p>
 								<h3 class="mensaje center-block">
 									<span>tu pronóstico ha sido registrado con éxito.</span>

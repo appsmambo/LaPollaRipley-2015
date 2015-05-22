@@ -249,12 +249,31 @@ h5 {
 		font-size:12px
 	}
 	h2 {
+		padding:10px 0;
 		font-size:20px;
-		line-height:36px
+		line-height:26px
+	}
+	h2 small {
+		font-size:15px;
+		line-height:18px
 	}
 	h3 {
 		font-size:16px;
 		margin:0
+	}
+	h3.mensaje {
+		font-size:18px;
+		line-height:20px;
+		margin-bottom:5px
+	}
+	h3.mensaje span {
+		font-size:22px
+	}
+	h5 {
+		margin-top:5px
+	}
+	.con-borde > [class*='col-'] {
+		border-right:none
 	}
 	.formulario {
 		border-right:none;
@@ -267,6 +286,16 @@ h5 {
 	label,
 	.form-control {
 		font-size:11px
+	}
+	.paises div {
+		font-size:11px;
+		margin:0 10px 12px;
+		text-transform:initial
+	}
+	.registrar {
+		width:240px;
+		margin-left:-120px;
+		bottom:-16px
 	}
 	.terminos a {
 		font-size:9px;
