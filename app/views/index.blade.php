@@ -125,7 +125,10 @@
 									<h1 class="hidden">Participa en la Polla Ripley y ¡Podrás llevarte tu TV Gratis! <small>exclusivo con tarjeta ripley</small></h1>
 									<img src="{{url()}}/img/inicio.png" alt="" class="img-responsive">
 								</a>
-								<img src="{{url()}}/img/marcas.png" alt="" class="img-responsive center-block marcas visible-xs">
+								<p class="visible-xs">
+									<br><br><br><br>
+									<img src="{{url()}}/img/marcas.png" alt="" class="img-responsive center-block marcas">
+								</p>
 							</div>
 						</div>
 					</div>
@@ -216,7 +219,7 @@
 												<div class="clearfix"></div>
 												<p>
 													<span class="hidden-xs"><br></span>
-													<input type="checkbox" name="terminos" id="terminos" class="checkbox-custom" value="1" checked data-validation="required">
+													<input type="checkbox" name="terminos" id="terminos" class="checkbox-custom" value="1" data-validation="required">
 													<label for="terminos">He leído y acepto los términos y condiciones.</label>
 												</p>
 											</div>
