@@ -125,10 +125,6 @@
 									<h1 class="hidden">Participa en la Polla Ripley y ¡Podrás llevarte tu TV Gratis! <small>exclusivo con tarjeta ripley</small></h1>
 									<img src="{{url()}}/img/inicio.png" alt="" class="img-responsive">
 								</a>
-								<p class="visible-xs">
-									<br><br><br><br>
-									<img src="{{url()}}/img/marcas.png" alt="" class="img-responsive center-block marcas">
-								</p>
 							</div>
 						</div>
 					</div>
@@ -634,6 +630,9 @@
 		<section class="footer container-fluid">
 			<footer>
 				<div class="container">
+					<p id="marcas" class="">
+						<img src="{{url()}}/img/marcas.png" alt="" class="img-responsive center-block marcas visible-xs">
+					</p>
 					<div class="row">
 						<div class="col-xs-3 col-sm-2">
 							<img src="{{url()}}/img/tarjeta-ripley.png" alt="" class="img-responsive tarjeta">
