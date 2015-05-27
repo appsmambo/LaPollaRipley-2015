@@ -18,7 +18,7 @@
 		<link href="{{url()}}/css/bootstrap.min.css" rel="stylesheet">
 		<link href="{{url()}}/css/jquery.fullPage.css" rel="stylesheet">
 		<link href="{{url()}}/css/animate.css" rel="stylesheet">
-		<link href="{{url()}}/css/estilos.css" rel="stylesheet">
+		<link href="{{url()}}/css/estilos.css?v=1.1" rel="stylesheet">
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -661,7 +661,7 @@
 		<script src="{{url()}}/js/jquery.customInput.js"></script>
 		<script src="{{url()}}/js/form-validator/jquery.form-validator.min.js"></script>
 		<script src="{{url()}}/js/flexcroll.js"></script>
-		<script src="{{url()}}/js/funciones.js"></script>
+		<script src="{{url()}}/js/funciones.js?v=1.1"></script>
 		<script src="//tt.mbww.com/tt-abbb9233cee3e720b2a86acf4ad04e51a670a7e762f301f0fc5b64b8794c30cd.js" async></script>
 	</body>
 </html>
