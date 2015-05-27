@@ -114,7 +114,7 @@ $(document).ready(function() {
 	});
 	fleXenv.initByClass("flexcroll");
 	$('.participa').click(function() {
-		$('#marcas').css('display', 'none');
+		$('#marcas').removeClass('visible-xs').css('display', 'none');
 		ga('send', 'event', 'participa');
 		pagina = 1;  // va a formulario
 		$.fn.fullpage.moveSlideRight();
