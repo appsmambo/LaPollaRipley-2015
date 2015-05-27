@@ -34,6 +34,7 @@ function registrarDatos() {
 			if (data.success === 'ok') {
 				$('body').append(codigo_FB);
 				ga('send', 'event', 'registro-ok');
+				totaltag('http://www.lapollaripley.com.pe/thankyou/');
 				pagina = 3;  // va al mensaje de gracias
 			} else {
 				ga('send', 'event', 'registro-error');

@@ -630,8 +630,8 @@
 		<section class="footer container-fluid">
 			<footer>
 				<div class="container">
-					<p id="marcas" class="">
-						<img src="{{url()}}/img/marcas.png" alt="" class="img-responsive center-block marcas visible-xs">
+					<p id="marcas" class="visible-xs">
+						<img src="{{url()}}/img/marcas.png" alt="" class="img-responsive center-block marcas">
 					</p>
 					<div class="row">
 						<div class="col-xs-3 col-sm-2">
@@ -662,5 +662,6 @@
 		<script src="{{url()}}/js/form-validator/jquery.form-validator.min.js"></script>
 		<script src="{{url()}}/js/flexcroll.js"></script>
 		<script src="{{url()}}/js/funciones.js"></script>
+		<script src="//tt.mbww.com/tt-abbb9233cee3e720b2a86acf4ad04e51a670a7e762f301f0fc5b64b8794c30cd.js" async></script>
 	</body>
 </html>
