@@ -2,13 +2,27 @@
 
 class HomeController extends BaseController {
 
+	private $_fechaFin = null;
+	private $_fechaHoy = null;
+	
+	public function __construct()
+	{
+		$this->_fechaFin = strtotime('2015-06-15 00:00:00');
+		$this->_fechaHoy = time();
+	}
+	
 	public function getIndex()
 	{
-		return View::make('index');
+		if ($this->_fechaHoy > $this->_fechaFin)
+			return View::make('final');
+		else
+			return View::make('index');
 	}
 	
 	public function postRegistro()
 	{
+		if ($this->_fechaHoy > $this->_fechaFin)
+			return Redirect::route('index');
 		$messages = array(
 			'required'		=> 'Es obligatorio.',
 			'email'			=> 'Ingrese su cuenta de email.',
